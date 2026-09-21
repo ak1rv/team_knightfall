@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Team Knightfall — a student-led initiative dedicated to teaching chess to underprivileged children, building critical thinking and opportunity through the game." />
+  <title>Team Knightfall &mdash; Chess for Every Child</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>♞</text></svg>" />
+</head>
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Team Knightfall home">
+      <img class="logo-icon" src="logo.png" alt="Team Knightfall logo"/>
+      <span>Team <span class="gold">Knightfall</span></span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#team">Our Team</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#involve">Get Involved</a></li>
+      <li><a href="#contact" class="btn btn-outline nav-cta">Contact</a></li>
+    </ul>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<nav id="mobileMenu" class="mobile-menu" role="navigation" aria-label="Mobile navigation">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#team">Our Team</a>
+  <a href="#activities">Activities</a>
+  <a href="#involve">Get Involved</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+
+<!-- ===================== HERO ===================== -->
+<section id="home" aria-label="Hero section">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="tagline" aria-label="Initiative tagline">Chess for Every Child</span>
+      <h1>The Board Is <em>Open</em> to Everyone.</h1>
+      <p>Team Knightfall is a student-led initiative on a mission to bring chess to underprivileged children &mdash; teaching strategy, patience, and critical thinking through the world’s greatest game.</p>
+      <div class="hero-actions">
+        <a href="#involve" class="btn btn-primary">Get Involved &#8599;</a>
+        <a href="#about"   class="btn btn-outline">Our Mission</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="chess-board-art" id="chessBoard" role="img" aria-label="Decorative chess board with pieces"></div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="mouse"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+
+<!-- ===================== STATS STRIP ===================== -->
+<div class="stats-strip" aria-label="Initiative at a glance">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-in-up">
+        <span class="stat-num">Est. 2024</span>
+        <span class="stat-label">Founded</span>
+      </div>
+      <div class="stat-item fade-in-up">
+        <span class="stat-num">Student-Led</span>
+        <span class="stat-label">100% volunteer initiative</span>
+      </div>
+      <div class="stat-item fade-in-up">
+        <span class="stat-num">Growing</span>
+        <span class="stat-label">Expanding our reach</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===================== ABOUT ===================== -->
+<section id="about" class="section" aria-labelledby="about-heading">
+  <div class="container">
+    <div class="about-grid">
+
+      <div>
+        <span class="section-label">About Us</span>
+        <h2 id="about-heading">Why Chess? Why Now?</h2>
+        <p style="margin-bottom:24px; font-size:1.02rem;">
+          Team Knightfall was born from a simple conviction: every child, regardless of background or circumstance, deserves access to the kind of education that sharpens the mind and builds confidence.
+        </p>
+        <p style="margin-bottom:24px; font-size:1.02rem;">
+          Chess is more than a game. It is a language of logic, a training ground for patience, and a framework for seeing the world strategically. Yet for many children, it remains inaccessible &mdash; seen as a hobby for the privileged, taught only in well-funded schools.
+        </p>
+        <p style="font-size:1.02rem;">
+          We are here to change that. As students ourselves, we understand the power of peer learning and the difference a single opportunity can make. Team Knightfall exists to open the board to every child who deserves a seat at it.
+        </p>
+
+        <div class="about-quote">
+          <blockquote>
+            &ldquo;Chess teaches you to control the initial excitement you feel when you see something that looks good, and it trains you to think objectively.&rdquo;
+          </blockquote>
+          <p style="margin-top:10px; font-size:0.82rem; color:var(--mid-grey);">Often attributed to chess educators on the value of the game for children</p>
+        </div>
+      </div>
+
+      <div class="about-values">
+        <div class="value-card fade-in-up">
+          <div class="value-icon" aria-hidden="true">♿</div>
+          <div>
+            <h3>Accessibility</h3>
+            <p>We believe quality chess education should not depend on postcode or income. We bring the game directly to communities that need it most.</p>
+          </div>
+        </div>
+        <div class="value-card fade-in-up">
+          <div class="value-icon" aria-hidden="true">🧠</div>
+          <div>
+            <h3>Critical Thinking</h3>
+            <p>Every move teaches planning, consequence, and creative problem-solving &mdash; skills that extend far beyond the chessboard.</p>
+          </div>
+        </div>
+        <div class="value-card fade-in-up">
+          <div class="value-icon" aria-hidden="true">🌱</div>
+          <div>
+            <h3>Community</h3>
+            <p>We grow alongside the children we teach. Our initiative is built on relationships, trust, and a shared belief in potential.</p>
+          </div>
+        </div>
+        <div class="value-card fade-in-up">
+          <div class="value-icon" aria-hidden="true">🔭</div>
+          <div>
+            <h3>Vision</h3>
+            <p>A future where every child has had the opportunity to sit across a chessboard, think deeply, and discover what they are capable of.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== TEAM ===================== -->
+<section id="team" class="section section-alt" aria-labelledby="team-heading">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-label">Our Team</span>
+      <h2 id="team-heading">The People Behind the Initiative</h2>
+      <p>Team Knightfall is powered by a group of dedicated students, each contributing their skills toward a shared mission. Profiles and photographs will be added as our team grows.</p>
+    </div>
+
+    <div class="team-grid">
+
+      <!-- Chess Teacher 1 -->
+      <article class="team-card fade-in-up" aria-label="Chess Teacher profile placeholder">
+        <div class="team-card-photo">
+          <span class="photo-placeholder" aria-hidden="true">♞</span>
+          <span class="placeholder-label">Photo coming soon</span>
+        </div>
+        <div class="team-card-body">
+          <span class="role">Chess Teacher</span>
+          <h3>Raghav Singla</h3>
+          <p>An experienced chess player and educator. <a href="https://lichess.org/fide/547020261/Raghav_Singla">Click here</a> to view his FIDE profile and <a href="https://www.chess.com/member/raghavsinglaptp">click here for his chess.com profile</a></p>
+        </div>
+      </article>
+
+      <!-- Chess Teacher 2 -->
+      <article class="team-card fade-in-up" aria-label="Chess Teacher profile placeholder">
+        <div class="team-card-photo">
+          <span class="photo-placeholder" aria-hidden="true">♞</span>
+          <span class="placeholder-label">Photo coming soon</span>
+        </div>
+        <div class="team-card-body">
+          <span class="role">Chess Teacher</span>
+          <h3>Arham Malu</h3>
+          <p>An enthusiastic chess educator with a passion for the game. <a href="https://lichess.org/fide/547020261/Arham_Malu">Click here</a> to view his FIDE profile and <a href="https://www.chess.com/member/2014Arham">click here for his chess.com profile</a></p>
+        </div>
+      </article>
+
+      <!-- Programmer -->
+      <article class="team-card fade-in-up" aria-label="Programmer profile placeholder">
+        <div class="team-card-photo">
+          <span class="photo-placeholder" aria-hidden="true">💻</span>
+          <span class="placeholder-label">Photo coming soon</span>
+        </div>
+        <div class="team-card-body">
+          <span class="role">Programmer &amp; Website Developer</span>
+          <h3>Eklavya Tandon</h3>
+          <p>Helped maintain the Team Knightfall website, helping translate our mission into a professional online presence.</p>
+        </div>
+      </article>
+
+      <!-- Social Media Manager -->
+      <article class="team-card fade-in-up" aria-label="Social Media Manager profile placeholder">
+        <div class="team-card-photo">
+          <span class="photo-placeholder" aria-hidden="true">📱</span>
+          <span class="placeholder-label">Photo coming soon</span>
+        </div>
+        <div class="team-card-body">
+          <span class="role">Social Media Manager</span>
+          <h3>Ryan Bishayee</h3>
+          <p>Manages Team Knightfall’s outreach and storytelling across social platforms, helping us connect with supporters. </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== ACTIVITIES ===================== -->
+<section id="activities" class="section" aria-labelledby="activities-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">What We Do</span>
+      <h2 id="activities-heading">Our Activities &amp; Initiatives</h2>
+      <p>From one-on-one teaching sessions to community workshops, everything we do is aimed at making chess accessible and meaningful for children who might otherwise never encounter it.</p>
+    </div>
+
+    <div class="activities-grid">
+
+      <article class="activity-card fade-in-up">
+        <div class="activity-card-top">
+          <div class="activity-icon" aria-hidden="true">♟</div>
+          <div>
+            <span class="activity-tag">Core Activity</span>
+            <div></div>
+          </div>
+        </div>
+        <div class="activity-card-body">
+          <h3>Chess Teaching Sessions</h3>
+          <p>Regular, structured one-on-one and small-group chess lessons for children. We cover everything from the basics of movement to strategic thinking and game planning. Currently not available right now</p>
+        </div>
+      </article>
+
+      <article class="activity-card fade-in-up">
+        <div class="activity-card-top">
+          <div class="activity-icon" aria-hidden="true">🏛️</div>
+          <div>
+            <span class="activity-tag">Events</span>
+            <div></div>
+          </div>
+        </div>
+        <div class="activity-card-body">
+          <h3>Chess Workshops</h3>
+          <p>Intensive half-day or full-day workshops where children explore specific aspects of chess &mdash; openings, tactics, endgames, and the psychology of play. Placeholder: upcoming workshop dates will be listed here.</p>
+        </div>
+      </article>
+
+      <article class="activity-card fade-in-up">
+        <div class="activity-card-top">
+          <div class="activity-icon" aria-hidden="true">🤝</div>
+          <div>
+            <span class="activity-tag">Outreach</span>
+            <div></div>
+          </div>
+        </div>
+        <div class="activity-card-body">
+          <h3>Community Outreach</h3>
+          <p>Building relationships with communities, families, and local organisations to reach children who need us most. Current partners include: TalentX</p>
+        </div>
+      </article>
+
+      <article class="activity-card fade-in-up">
+        <div class="activity-card-top">
+          <div class="activity-icon" aria-hidden="true">🏆</div>
+          <div>
+            <span class="activity-tag">Upcoming</span>
+            <div></div>
+          </div>
+        </div>
+        <div class="activity-card-body">
+          <h3>Future Events &amp; Tournaments</h3>
+          <p>We plan to organise friendly internal tournaments, community chess days, and collaborative events to celebrate progress and build excitement around the game. Details coming soon.</p>
+        </div>
+      </article>
+
+      <article class="activity-card fade-in-up">
+        <div class="activity-card-top">
+          <div class="activity-icon" aria-hidden="true">📢</div>
+          <div>
+            <span class="activity-tag">Awareness</span>
+            <div></div>
+          </div>
+        </div>
+        <div class="activity-card-body">
+          <h3>Awareness &amp; Storytelling</h3>
+          <p>Sharing the stories of the children we work with, the impact we hope to create, and the journey of building Team Knightfall from the ground up. Follow our social channels by clicking <a href="https://www.instagram.com/team_knightfall/">here</a> for updates.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== GET INVOLVED ===================== -->
+<section id="involve" class="section section-alt" aria-labelledby="involve-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Get Involved</span>
+      <h2 id="involve-heading">Join Us &mdash; Every Skill Helps</h2>
+      <p>Team Knightfall is just getting started, and there are many ways to be part of what we are building. Whether you can teach, code, design, or simply spread the word, there is a place for you.</p>
+    </div>
+
+    <div class="involve-grid">
+      <div class="involve-card fade-in-up">
+        <span class="num">01</span>
+        <h3>Volunteer Chess Teacher</h3>
+        <p>Share your love of chess directly with children. No professional credentials required &mdash; just enthusiasm, patience, and a solid grasp of the game.</p>
+      </div>
+      <div class="involve-card fade-in-up">
+        <span class="num">02</span>
+        <h3>Website &amp; Tech Support</h3>
+        <p>Help us build and maintain our digital presence. Developers, designers, and anyone comfortable with the web can contribute meaningfully here.</p>
+      </div>
+      <div class="involve-card fade-in-up">
+        <span class="num">03</span>
+        <h3>Social Media &amp; Outreach</h3>
+        <p>Help us tell our story. If you are good at writing, photography, short-form video, or community engagement, we would love your input.</p>
+      </div>
+      <div class="involve-card fade-in-up">
+        <span class="num">04</span>
+        <h3>Event Organisation</h3>
+        <p>Planning, logistics, and coordination are at the heart of running a successful initiative. Help us organise workshops, sessions, and community events.</p>
+      </div>
+      <div class="involve-card fade-in-up">
+        <span class="num">05</span>
+        <h3>Spread the Word</h3>
+        <p>Sometimes the most powerful thing is simply sharing our mission with people who care. Tell a friend, share a post, or introduce us to someone who can help.</p>
+      </div>
+      <div class="involve-card fade-in-up">
+        <span class="num">06</span>
+        <h3>Donate Resources</h3>
+        <p>Chess sets, boards, educational materials, or time &mdash; contributions of any kind help us deliver better experiences to the children we work with.</p>
+      </div>
+    </div>
+
+    <div class="involve-cta fade-in-up">
+      <h3>Ready to make a move?</h3>
+      <p>Get in touch and tell us how you’d like to contribute. We’ll find the right place for you on the team.</p>
+      <div class="contact-info">
+        <a class="contact-pill" href="mailto:projectteamknightfall@gmail.com">&#9993; projectteamknightfall@gmail.com</a>
+        <a class="contact-pill"href="https://www.instagram.com/team_knightfall/"target="_blank"rel="noopener noreferrer">&#128247; @team_knightfall</a>
+      </div>
+      <a href="#contact" class="btn btn-primary">Send Us a Message &#8599;</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ===================== CONTACT ===================== -->
+<section id="contact" class="section" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-label">Contact</span>
+      <h2 id="contact-heading">Let’s Talk</h2>
+    </div>
+
+    <div class="contact-wrapper">
+
+      <div class="contact-info-panel">
+        <h3>We’d love to hear from you.</h3>
+        <p>Whether you want to volunteer, ask a question, or simply learn more about what we do &mdash; reach out. We are a small team and we read every message.</p>
+
+        <div class="contact-detail">
+          <span aria-hidden="true">&#9993;</span>
+          <span>Email: <em>projectteamknightfall@gmail.com</em></span>
+        </div>
+        <div class="contact-detail">
+          <span aria-hidden="true">&#128247;</span>
+          <span>Instagram: <em>@team_knightfall</em></span>
+        </div>
+        <div class="contact-detail">
+          <span aria-hidden="true">&#127760;</span>
+          <span>Location: <em>Gurugram, Haryana, India</em></span>
+        </div>
+      </div>
+
+      <div class="contact-form-wrapper">
+        <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+
+          <div class="form-notice" role="note">
+            <span aria-hidden="true">&#8505;&#65039;</span>
+            <span>This is a static website. The contact form currently requires integration with a backend service (such as Formspree or EmailJS) to deliver messages. Until then, please use the contact details on the left once available.</span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Full Name <span aria-label="required">*</span></label>
+              <input type="text" id="contactName" name="name" placeholder="Your name" autocomplete="name" required />
+              <span class="field-error" id="contactNameError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Email Address <span aria-label="required">*</span></label>
+              <input type="email" id="contactEmail" name="email" placeholder="your@email.com" autocomplete="email" required />
+              <span class="field-error" id="contactEmailError" role="alert"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject">Subject <span aria-label="required">*</span></label>
+            <input type="text" id="contactSubject" name="subject" placeholder="What is this about?" required />
+            <span class="field-error" id="contactSubjectError" role="alert"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message <span aria-label="required">*</span></label>
+            <textarea id="contactMessage" name="message" placeholder="Tell us how you’d like to get involved, or ask us anything..." rows="5" required></textarea>
+            <span class="field-error" id="contactMessageError" role="alert"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-submit">Send Message &#8599;</button>
+          <div id="formMessage" class="form-message" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo" aria-label="Team Knightfall home">
+          <img class="logo-icon" src="logowithbg.png" alt="Team Knightfall logo" />
+          <span>Team <span class="gold">Knightfall</span></span>
+        </a>
+        <p>A student-led initiative dedicated to teaching chess to underprivileged children and opening minds through strategic play.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#involve">Get Involved</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="#involve">Volunteer</a></li>
+          <li><a href="#involve">Tech Support</a></li>
+          <li><a href="#involve">Outreach</a></li>
+          <li><a href="#involve">Events</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; 2024 Team Knightfall. All rights reserved.</span>
+      <span>Built with purpose &mdash; <a href="#home">♞ Chess for Every Child</a></span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
